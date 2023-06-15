@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<div class="details" (click) = "btnclick()" >
+    <div class="contents">
+        <!-- <div *ngFor="let Student of StudentDetails_Array">
+        </div> -->
+        <div class="flexMain">
+            <div class="header">
+                <div class="StudentName"><h2 class="StudentNameContent">  {{StudentDetails_Array.first_Name}} </h2></div>
+                <div class="editIcon">
+                    <i class="material-icons"><span class="material-icons-outlined">more_vert</span></i>
+                </div>
+            </div>
+            <div class="GridMain">
+                <div class="flexchild">
+                    <div class="Stu_desc">
+                        <h4 class="Desc">Age</h4>
+                    </div>
+                    <div class="Stu_value">
+                        <p class="Value">{{StudentDetails_Array.age}}</p>
+                    </div>
+                </div>
+    
+                <div class="flexchild">
+                    <div class="Stu_desc">
+                        <h4 class="Desc">Department</h4>
+                    </div>
+                    <div class="Stu_value">
+                        <p class="Value">{{StudentDetails_Array.Department}}</p>
+                    </div> 
+                </div>
+                <div class="flexchild">
+                    <div class="Stu_desc">
+                        <h4 class="Desc">CGPA</h4>
+                    </div>
+                    <div class="Stu_val">
+                        <p class="Value">{{StudentDetails_Array.CGPA}}</p>
+                    </div>
+                </div>
+                <div class="flexchild">
+                    <div class="Stu_desc">
+                        <h4 class="Desc">Attendance</h4>
+                    </div>
+                    <div class="Stu_val">
+                        <p class="Value">{{StudentDetails_Array.Attendance}}</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="iconFlex">               
+                    <div class="arrowIcon">
+                        <i class="material-icons icon Arrow">forwardarrow</i>
+                    </div>
+                
+                    <div class="homeIcon">
+                        <i class="material-icons icon Home" [routerLink]="['/StudentDetails'] ">
+                            <span class="material-icons-outlined">home</span>    
+                        </i>
+                    </div>                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+
+</div>

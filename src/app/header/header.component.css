@@ -1,0 +1,50 @@
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.headerContainer{
+position: fixed;
+width:100%;
+background-color: black;
+height: fit-content;
+padding: 1rem;
+top: 0;
+left: 0;
+z-index: 1;
+}
+
+.navigators{
+    text-align: right;
+    
+}
+
+.headerItems{
+    display: inline-block;   
+    margin-right: 5rem;  
+    color: white;  
+}
+
+.navigators a:hover,
+.navigators a:focus{
+    text-decoration: underline;
+}
+
+.navigators a::after{
+    color: royalblue;
+}
+
+.navigators:active{
+    color: blue;
+}
+
+
+
+
+

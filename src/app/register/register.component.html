@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="Register">
+    <div class="main">
+    
+        <div class="Main-Child">
+            <div class="Student_register">
+    
+                <div class = "AddStudentCard">
+                    <div class="register_button" > 
+                        <i class="fa fa-plus plusbutton" (click) = "RegisterButton()"></i>
+                    </div>
+                </div>  
+
+                <div class="Form_container" *ngIf = "registerToggleButton">            
+                    <div class="headercontent">
+                        <div class="header">
+                            <h2>Add Student Details</h2>                    
+                            <i class="fa fa-plus Crossbutton" (click) = "RegisterButton()"></i>             
+                        </div>
+                    </div>
+                    <!-- ---------- -->
+                        <form [formGroup] = "StudentForm" (ngSubmit)="FormGrpSubmit()"> 
+                            <div class="parentFlex">
+                                <div class="Grid">                 
+                                    <div class="grid1">
+                                        <div class="LabelInput">
+                                            <label for="FirstName">Name </label>
+                                            <input type = "text" id="FirstName" formControlName = "first_Name">            
+                                        </div>
+                                
+                                        <div class="LabelInput">
+                                            <label for="Department">Department</label>
+                                            <input type = "text" id="Department" formControlName = "Department">            
+                                        </div>
+                        
+                                        <div class="LabelInput">
+                                            <label for="Phone"> CGPA </label>
+                                            <input type = "text" id = "CGPA" formControlName = "CGPA">             
+                                        </div>
+                        
+                                        <div class="LabelInput">
+                                            <label for="Age"> Age  </label>
+                                            <input type = "number" id="Age" formControlName = "age">            
+                                        </div>
+                                
+                                        <div class="LabelInput">
+                                            <label for="Phone"> Attendance  </label>
+                                            <input type = "text" id = "Attendance" formControlName = "Attendance">             
+                                        </div>
+                                    </div>
+                                    <div class="grid1">
+                                        <div class="LabelInput">
+                                            <label for="FatherName">Father Name </label>
+                                            <input type = "text" id="FirstName" formControlName = "FatherName">            
+                                        </div>
+                                
+                                        <div class="LabelInput">
+                                            <label for="MotherName">Mother Name</label>
+                                            <input type = "text" id="Department" formControlName = "MotherName">            
+                                        </div>
+                        
+                                        <div class="LabelInput">
+                                            <label for="Address"> Address </label>
+                                            <textarea class = "AddressBox" cols="30" rows="7.5" id = "CGPA" formControlName = "Address"></textarea>
+                                                      
+                                        </div>
+                        
+                                        <div class="LabelInput">
+                                            <label for="Age"> Age  </label>
+                                            <input type = "number" id="Age" formControlName = "age">            
+                                        </div>               
+                                            
+                                        <div class="FormButtons">
+                                            <button class="form_btn" (click) = "RegisterStudent()">Add</button>
+                                            <button class="form_btn" (click) = "RegisterButton()">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                        </form>
+                    <!-- ------------>
+                </div>
+        
+            </div>
+        </div>
+        
+        <div *ngFor= "let student of StudentDetails_Array">        
+            <div class="Main-Child" >
+                <app-student-details [StudentDetails_Array] = "student"></app-student-details>
+            </div>
+        </div> 
+        
+
+    </div>    
+</div>
+

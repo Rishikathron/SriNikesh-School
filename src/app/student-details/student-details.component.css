@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+.details{
+    height: 250px;
+    background-color: aliceblue;
+    width: 300px; 
+    border-radius: 1rem; 
+    box-shadow: 0 2px 20px rgba(58,120,156,.2);   
+}
+
+/* ---- Student Contents------ */
+.GridMain{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.flexMain{
+    display: flex;
+    flex-flow: column;
+    padding: 1.5rem;
+}
+
+.flexchild{
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+.header{    
+    display: flex;  
+    justify-content: space-between;  
+}
+
+/* -------STYLES FOR ICONS----------- */
+.iconFlex{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.icon{
+    font-size: xx-large;
+    color: blueviolet;
+      
+}
+.arrowIcon{
+    display: relative;
+    right: 5rem;   
+}
+
+
+/* .material-icons-outlined{
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+} */
