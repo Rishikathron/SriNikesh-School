@@ -1,50 +1,45 @@
-*{    
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+.header ,.flex, .schoolname, .auth{
+    display: flex;
+    flex-flow: row;    
+    color: white;    
+    top : 2rem;
+}
+.schoolname{
+    position: fixed;
+    left: 10%
+}
+.flex{
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2em;
+    justify-content: space-evenly;
+    position: fixed;
+    left:30%;
+}
+.auth{
+    display: flex;
+    position: fixed;
+    flex-flow: row;
+    gap: 2rem;
+    right: 15%;
+    font-size: 1.3rem;
 }
 
-
-.headerContainer{
-position: fixed;
-width:100%;
-background-color: black;
-height: fit-content;
-padding: 1rem;
-top: 0;
-left: 0;
-z-index: 1;
+.Joinbtn{
+    background-color: rgba(142, 93, 245, 1);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    position: fixed;
+    top: 1.7rem;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
-
-.navigators{
-    text-align: right;
-    
-}
-
-.headerItems{
-    display: inline-block;   
-    margin-right: 5rem;  
-    color: white;  
-}
-
-.navigators a:hover,
-.navigators a:focus{
-    text-decoration: underline;
-}
-
-.navigators a::after{
-    color: royalblue;
-}
-
-.navigators:active{
-    color: blue;
-}
-
-
-
 
 
